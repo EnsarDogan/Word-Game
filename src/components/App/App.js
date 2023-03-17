@@ -16,7 +16,6 @@ function App() {
   }
   const correctGuess =
     lastGuess && lastGuess.every(({ status }) => status === "correct");
-  console.log(correctGuess);
   return (
     <div className="wrapper">
       <Header />
