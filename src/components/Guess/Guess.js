@@ -11,7 +11,7 @@ function Guess({ guessList }) {
               ? guessList[item].map(({ letter, status }) => (
                   <span className={`cell ${status}`}>{letter}</span>
                 ))
-              : range(5).map((cell) => <span clasName="cell"></span>)}
+              : range(5).map((cell) => <span className="cell"></span>)}
           </p>
         );
       })}
