@@ -3,7 +3,7 @@ import { range } from "../../utils";
 
 function Guess({ guessList }) {
   return (
-    <div class="guess-results">
+    <div className="guess-results">
       {range(6).map((item) => {
         return (
           <p className="guess">
