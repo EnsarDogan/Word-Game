@@ -6,12 +6,12 @@ function Guess({ guessList }) {
     <div class="guess-results">
       {range(6).map((item) => {
         return (
-          <p class="guess">
+          <p className="guess">
             {guessList[item]
               ? guessList[item].map(({ letter, status }) => (
-                  <span class={`cell ${status}`}>{letter}</span>
+                  <span className={`cell ${status}`}>{letter}</span>
                 ))
-              : range(5).map((cell) => <span class="cell"></span>)}
+              : range(5).map((cell) => <span clasName="cell"></span>)}
           </p>
         );
       })}
